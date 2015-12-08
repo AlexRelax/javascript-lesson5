@@ -1,9 +1,9 @@
-function createArray(n){
+function createArray(n, m){
 	var arr = new Array(n);
 	for (var i = 0; i < n; i++) {
-		arr[i] = new Array(n);
-		for (var j = 0; j < n; j++) {
-			arr[i][j] = (i * n + j + 1);
+		arr[i] = new Array(m);
+		for (var j = 0; j < m; j++) {
+			arr[i][j] = (i * m + j + 1);
 		}
 	}
 	return arr;
@@ -20,5 +20,5 @@ function printArray(arr){
 	}
 }
 
-var mas = createArray(10);
+var mas = createArray(4, 5);
 printArray(mas);
