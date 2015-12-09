@@ -3,7 +3,7 @@ function createArray(n, m){
 	for (var i = 0; i < n; i++) {
 		arr[i] = new Array(m);
 		for (var j = 0; j < m; j++) {
-			arr[i][j] = (i * m + j + 1);
+			arr[i][j] = i * m + j + 1;
 		}
 	}
 	return arr;
